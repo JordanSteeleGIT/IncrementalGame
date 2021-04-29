@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <title>Incremental Game</title>
+  </head>
+  <body>
+    <div class="main-body">
+      <div class="topnav">
+        <a>Incremental Game</a>
+      </div>
+      <div class="game-pannel">
+        <div class="game-pannel-left">
+          <!-- upgrade pannel -->
+
+          <h2 id="upgradesTitle">Upgrades</h2>
+          test
+          <!-- prettier-ignore -->
+          <div class="amountUpgraded" id="amount1" onclick="upgradeAmount(1)"></div>
+          <!-- prettier-ignore -->
+          <div class="amountUpgraded" id="amount2" onclick="upgradeAmount(2)"></div>
+          <!-- prettier-ignore -->
+          <div class="amountUpgraded" id="amount3" onclick="upgradeAmount(3)"></div>
+          <!-- prettier-ignore -->
+          <div class="amountUpgraded" id="amount4" onclick="upgradeAmount(4)"></div>
+          <div class="upgrade-grid">
+            <!-- prettier-ignore -->
+            <button class="upgradeAmount active" id="uAmount1" onclick="upgradeAmount(1)" autofocus>1</button>
+            <!-- prettier-ignore -->
+            <button class="upgradeAmount" id="uAmount2" onclick="upgradeAmount(2)">2</button>
+            <!-- prettier-ignore -->
+            <button class="upgradeAmount" id="uAmount3" onclick="upgradeAmount(3)">5</button>
+            <!-- prettier-ignore -->
+            <button class="upgradeAmount" id="uAmount4" onclick="upgradeAmount(4)">10</button>
+            <div class="upgrades-list">
+              <!-- List of buttons that upgrade user -->
+              <div class="generator" id="gen1" onclick="buyGenerator(1)"></div>
+              <div class="generator" id="gen2" onclick="buyGenerator(2)"></div>
+              <div class="generator" id="gen3" onclick="buyGenerator(3)"></div>
+              <div class="generator" id="gen4" onclick="buyGenerator(4)"></div>
+              <div class="generator" id="gen5" onclick="buyGenerator(5)"></div>
+            </div>
+          </div>
+        </div>
+        <div class="game-pannel-right">
+          <!-- clicking pannel -->
+          <h2 id="game-pannel-title">Incremental game</h2>
+          <h2 id="counter">0</h2>
+          <h2 id="clickDamage">Click Damage: 0.20</h2>
+          <button id="buttonClick" onclick="userClick()">Click me</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

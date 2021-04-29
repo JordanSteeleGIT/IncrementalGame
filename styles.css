@@ -1,0 +1,123 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #101010;
+}
+
+.topnav {
+  margin-bottom: 10px;
+  overflow: hidden;
+  background-color: #0f3b69;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 40px;
+  text-decoration: none;
+  font-size: 37px;
+}
+
+.game-pannel {
+  width: 100%;
+  background: #101010;
+  margin: 0;
+  height: 850px;
+  -webkit-box-shadow: 9px 7px 19px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 7px 19px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 9px 7px 19px -5px rgba(0, 0, 0, 0.75);
+}
+
+.game-pannel-left {
+  height: 100%;
+  width: 30%;
+  background-color: #131313;
+  float: left;
+}
+.game-pannel-right {
+  background-color: #101010;
+  height: 100%;
+  float: left;
+  width: 70%;
+}
+
+#upgradesTitle {
+  color: white;
+  text-align: center;
+  font-size: 35px;
+}
+
+#game-pannel-title {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+}
+
+#counter {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+
+#clickDamage {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+#buttonClick {
+  margin: 0;
+  position: absolute;
+  top: 450px;
+  left: 64.7%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #0f3b69;
+  border: none;
+  color: white;
+  font-size: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#buttonClick:hover {
+  background-color: #24568a;
+}
+
+.generator {
+  background-color: #0f3b69;
+  text-align: left;
+  width: 100%;
+  padding-left: 100px;
+  padding-top: 35px;
+  margin-top: 10px;
+  height: 120px;
+  font-size: 1.3em;
+  cursor: pointer;
+  color: white;
+}
+
+.generator.locked {
+  background-color: red;
+}
+
+.upgrades-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.upgradeAmount {
+  background-color: #ebebeb;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.active {
+  background-color: #0f3b69;
+}
